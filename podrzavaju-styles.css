@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+.main{
+    min-width: 320px;
+    max-width: 1400px;
+    display: block;
+    margin: 0 30px;
+    width: 90%;
+}
+.main-title{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    min-width: 250px;
+}
+.main-title h1{
+    font-size: 36px;
+}
+.sponsors-container{
+    min-width: auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+    width: 90%;
+    height: fit-content;
+}
+.sponsor-content{
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.rimac-automobili-generalni-sponzor{
+   position: relative;
+}
+.rimac-automobili-generalni-sponzor ul{
+    list-style-type: none;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-left: 5px;
+    position: absolute;
+    bottom: -80px;
+    right: -15px;
+    transform: translateY(-50%);
+    max-width: 160px;
+    background-color: turquoise;
+    height: 70px;
+    width: 160px;
+    
+}
+.li-generalni-sponzor{
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+}
+.li-rimac-automobili{
+    font-size: 18px;
+    line-height: 31px;
+    color: #001618;
+}
+.rimac-automobili-image{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rimac-content{
+    width: 90%;
+    position: relative;
+    top: 60px;
+}
+.rimac-content-logo{
+    width: 160px;
+    height: 110px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    top: -90px
+}
+.rimac-slider{
+    display: flex;
+    overflow: hidden;
+    
+}
+.slider-slide{
+    min-width: 100%;
+    animation: slider 15s ease-in-out infinite alternate;
+}
+@keyframes slider{
+    from {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(0);
+    }
+    40% {
+        transform: translate(-100%);
+    }
+    50% {
+        transform: translate(-100%);
+    }
+    60% {
+        transform: translate(-200%);
+    }
+    70% {
+        transform: translate(-200%);
+    }
+    80%{
+        transform: translate(-300%);
+    }
+    90% {
+        transform: translate(-300%);
+    }
+    to{
+        transform: translate(-300%);
+    }
+}
