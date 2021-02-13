@@ -1,124 +1,289 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
+  font-family: Fuse V\.2 Display;
 }
-.main{
-    min-width: 320px;
-    max-width: 1400px;
-    display: block;
-    margin: 0 30px;
-    width: 90%;
+.main {
+  min-width: 320px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
 }
-.main-title{
-    margin-top: 100px;
-    margin-bottom: 70px;
-    margin-left: 50%;
-    transform: translate(-50%);
-    min-width: 250px;
+.main-title {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  margin-left: 15%;
+  min-width: 250px;
 }
-.main-title h1{
-    font-size: 36px;
+h1 {
+  font-size: 36px;
 }
-.sponsors-container{
-    min-width: auto;
-    max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 30px;
-    width: 90%;
-    height: fit-content;
+.sponsor-content {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  max-width: 450px;
+  position: relative;
 }
-.sponsor-content{
-    box-sizing: border-box;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 80px;
-}
-.rimac-automobili-generalni-sponzor{
-   position: relative;
-}
-.rimac-automobili-generalni-sponzor ul{
-    list-style-type: none;
-    font-weight: 900;
-    padding-top: 15px;
-    padding-left: 5px;
-    position: absolute;
-    bottom: -80px;
-    right: -15px;
-    transform: translateY(-50%);
-    max-width: 160px;
-    background-color: turquoise;
-    height: 70px;
-    width: 160px;
-    
-}
-.li-generalni-sponzor{
-    color: white;
-    font-size: 14px;
-    line-height: 16px;
-}
-.li-rimac-automobili{
-    font-size: 18px;
-    line-height: 31px;
-    color: #001618;
+.sponsor-image {
+  position: relative;
 }
 .rimac-automobili-image{
-    display: inline-block;
+  box-shadow: 1px 3px 10px #b4b3b3;
+}
+.sponsor-image ul {
+  list-style-type: none;
+  font-weight: 900;
+  padding-top: 15px;
+  padding-left: 5px;
+  position: absolute;
+  bottom: -100px;
+  right: -15px;
+  transform: translateY(-50%);
+  max-width: 160px;
+  background-color: rgb(49, 49, 49);
+  height: 70px;
+  width: 160px;
+}
+.ul-extension-engine {
+  list-style-type: none;
+  font-weight: 900;
+  padding-top: 15px;
+  padding-left: 5px;
+  position: absolute;
+  bottom: -100px;
+  left: -15px;
+  transform: translateY(-50%);
+  max-width: 160px;
+  background-color: turquoise;
+  height: 70px;
+  width: 160px;
+}
+
+.li-top {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+}
+.li-bottom {
+  font-size: 18px;
+  line-height: 31px;
+  color: turquoise;
+}
+.rimac-automobili-image {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content-paragraph {
+  width: 90%;
+  position: relative;
+  top: 60px;
+  box-shadow: 1px 3px 10px #b4b3b3;
+}
+.content-paragraph p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+.content-logo {
+  width: 160px;
+  height: 110px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  top: -100px;
+  left: -40px;
+}
+.content-logo-extension-engine {
+  width: 160px;
+  height: 110px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  top: -100px;
+  right: -80px;
+}
+.rimac-slider {
+  display: flex;
+  overflow: hidden;
+}
+.slider-slide {
+  min-width: 100%;
+  animation: slider 15s ease-in-out infinite alternate;
+}
+@keyframes slider {
+  from {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(0);
+  }
+  40% {
+    transform: translate(-100%);
+  }
+  50% {
+    transform: translate(-100%);
+  }
+  60% {
+    transform: translate(-200%);
+  }
+  70% {
+    transform: translate(-200%);
+  }
+  80% {
+    transform: translate(-300%);
+  }
+  90% {
+    transform: translate(-300%);
+  }
+  to {
+    transform: translate(-300%);
+  }
+}
+.sponsors-section {
+  min-width: 320px;
+  max-width: 1400px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.sponsors-section h1 {
+  margin-left: 60px;
+  margin-top: 20px;
+  font-weight: 800;
+  line-height: 44px;
+}
+.sponsors-icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
+}
+.sponsors-icon:hover{
+  cursor: pointer;
+}
+.sponsors-section img {
+  flex-basis: 50%;
+  height: 17vh;
+  width: 35vw;
+  margin-top: 20px;
+  margin-right: 8%;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 480px) {
+  .sponsors-icons-wrapper {
+    justify-content: space-evenly;
+  }
+  .sponsors-section img {
+    flex-basis: 40%;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .sponsors-icons-wrapper {
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+  .sponsors-section img {
+    flex-basis: 30%;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .sponsors-icons-wrapper {
+    margin-right: 0;
+  }
+  .sponsors-section img {
+    flex-basis: 25%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  .sponsor-content:nth-of-type(odd){
+     position: relative;
+     left: -5%;
+     text-align: left;
+     max-width: 650px;
+  }
+  .sponsor-content:nth-of-type(4){
+    max-width: 650px;
     position: relative;
-    height: 100%;
-    width: 100%;
+    right: -10%;
+   }
+   .sponsor-content-right .content-paragraph{
+       text-align: right;
+   }
+  .content-logo{
+      top:-85px
+  }
+}
+@media only screen and (min-width: 770px){
+  .sponsor-content:nth-of-type(2){
+    max-width: 90%;
+    padding-left: 85px;
+  }
+  .sponsor-content ul{
+    height: 10vh;
+    width: 20vw;
+  }
+  .sponsor-content:nth-of-type(2) ul{
+    right: 0px;
+  }
+  .sponsor-content:nth-of-type(n) .sponsor-image{
+    max-width: 40%;
+    display:inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 0 auto;
+  }
+  .sponsor-content:nth-of-type(n) .content-paragraph{
+    display: inline-block;
+    max-width: 40%;
+    margin: 0 20px;
+  }
+  .sponsor-content:nth-of-type(3) .content-paragraph{
+    display: block;
+    max-width: 50%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.rimac-content{
-    width: 90%;
+  }
+  .sponsor-content:nth-of-type(3) .sponsor-image{
+    display: block;
+    max-width: 50%;
+    margin: 0;
+  }
+  .sponsor-content:nth-of-type(4) .sponsor-image {
+    display: block;
+    max-width: 60%;
     position: relative;
-    top: 60px;
-}
-.rimac-content-logo{
-    width: 160px;
-    height: 110px;
-    display: inline-block;
-    box-sizing: border-box;
-    position: absolute;
-    top: -90px
-}
-.rimac-slider{
-    display: flex;
-    overflow: hidden;
-    
-}
-.slider-slide{
-    min-width: 100%;
-    animation: slider 15s ease-in-out infinite alternate;
-}
-@keyframes slider{
-    from {
-        transform: translate(0);
-    }
-    20% {
-        transform: translate(0);
-    }
-    40% {
-        transform: translate(-100%);
-    }
-    50% {
-        transform: translate(-100%);
-    }
-    60% {
-        transform: translate(-200%);
-    }
-    70% {
-        transform: translate(-200%);
-    }
-    80%{
-        transform: translate(-300%);
-    }
-    90% {
-        transform: translate(-300%);
-    }
-    to{
-        transform: translate(-300%);
-    }
+    left: 0;
+  }
+  .sponsor-content:nth-of-type(4) .content-paragraph{
+    display: block;
+    max-width: 60%;
+    position: relative;
+    left: 20%;
+  }
+  .sponsor-content:nth-of-type(4) .content-logo-extension-engine{
+    right: 0;
+  }
+  .sponsor-content:nth-of-type(5) .content-paragraph{
+    display: block;
+    max-width: 50%;
+    margin: 0;
+  }
+  .sponsor-content:nth-of-type(5) .sponsor-image{
+    display: block;
+    max-width: 50%;
+    margin: 0;
+  }
 }
